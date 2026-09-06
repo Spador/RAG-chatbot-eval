@@ -1,0 +1,92 @@
+[
+  {
+    "id": "g001",
+    "query": "Explain how regression testing compares metrics to decide new version deployment feasibility.",
+    "ideal_answer": "Regression testing compares the metrics of the new version against the previous one by running a file that generates a report showing where the new version stands. This comparison helps determine if the new version performs better or not, guiding the decision on whether to deploy it.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g002",
+    "query": "If a rare, high-value AI cert like Claude emerges, how would its cost-benefit compare?",
+    "ideal_answer": "A rare, high-value AI certification like Claude from a leading provider could offer good benefits, especially since few have enrolled, increasing its value. However, consider the cost carefully, as many certifications may not justify the expense unless they provide significant recognition or skills.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g003",
+    "query": "Why must MMLU benchmark scores be cautiously interpreted for domain-specific model performance?",
+    "ideal_answer": "MMLU benchmark scores must be cautiously interpreted for domain-specific model performance because a model can perform well overall but still fail in specific areas, like economics equations. Benchmarks may hide such weaknesses, so relying solely on these scores can be misleading. It's essential to implement your own evaluation methodology tailored to the target domain to accurately assess model suitability.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g004",
+    "query": "If model queries differ from golden set on DB, how might eval accuracy be affected?",
+    "ideal_answer": "If model queries differ from the golden set on the database, the evaluation accuracy will decrease because the results from the model-generated queries will not match the expected results, indicating incorrect query generation.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g005",
+    "query": "Can pipeline-level evals ensure flawless synergy between retriever-generator in RAG systems?",
+    "ideal_answer": "No, pipeline-level evals showing proper function do not guarantee flawless synergy between retriever and generator in RAG systems, as individual components may work well but the overall pipeline can still fail.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g006",
+    "query": "How is per-question recall computed by comparing retriever's top-5 documents with original answers?",
+    "ideal_answer": "Per-question recall is computed by checking how many of the original correct answer documents appear within the retriever's top-5 retrieved documents for that question, then calculating the proportion of these correct documents retrieved out of the total correct documents.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g007",
+    "query": "Why must model evals guide selection between OpenAI LLM and Claude LLM for specific capabilities?",
+    "ideal_answer": "Model evals provide objective, capability-based comparisons between OpenAI LLM and Claude LLM, enabling informed decisions aligned with specific application needs. By analyzing performance metrics relevant to required features, model evals identify which LLM excels in those areas, ensuring the chosen model best supports the use case rather than relying on subjective opinions.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g008",
+    "query": "Compare potential failure points at component versus workflow levels in RAG applications.",
+    "ideal_answer": "In RAG applications, component-level failures can occur in individual parts like the retriever, reranker, query rewriter, embedding model, vector database, output parser, agent, tool selector, memory, or guardrails. Each component requires its own evaluation pipeline to identify issues. Workflow-level failures arise even if all components function well individually, due to problems in how these components interact within the overall RAG or agent workflow, especially in multi-turn chatbots. Thus, both levels need separate evaluation to ensure system reliability.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g009",
+    "query": "How does using real human exam scores as baselines quantify LLM performance versus humans?",
+    "ideal_answer": "Using real human exam scores as baselines quantifies LLM performance by providing an accurate, measured comparison against actual human results rather than estimates. This approach, as in the benchmark launched in April 2023, uses standardized exams taken by both humans and LLMs, allowing precise positioning of LLM scores relative to average and top human performers.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g010",
+    "query": "Specify attendance variability and scheduling conflicts for the 2-4 hour Saturday session with limited participants.",
+    "ideal_answer": "Attendance for the 2-4 hour Saturday session is currently limited to 6 or 7 people, with some variability expected as more may join within a few minutes. Scheduling conflicts arise because not everyone can attend live at 6 pm, and some participants watch recorded videos later. This affects timing and overall attendance, so feedback will be collected after the month to address these issues.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g011",
+    "query": "Why run custom eval for Zomato email routing, considering model cost and category accuracy?",
+    "ideal_answer": "Running a custom evaluation for Zomato email routing is essential to balance model cost and category accuracy. Although a big LLM (Model A) offers top accuracy, it is expensive (~$15 per 1 million tokens). Custom evaluation helps determine if a cheaper model can meet accuracy needs for categories like billing, technical, and refund, ensuring cost-effective and reliable routing.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g012",
+    "query": "If a model prioritizes reasoning over speed, how might this affect your readiness to explore leaderboards?",
+    "ideal_answer": "If a model prioritizes reasoning over speed, it may provide slower answers, but this approach helps you become more literate and confident in your requirements, improving your readiness to explore leaderboards thoughtfully rather than making quick, uninformed choices.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g013",
+    "query": "Detail how model evaluation via benchmarks contrasts with custom evals, including application and planning challenges.",
+    "ideal_answer": "Model evaluation via benchmarks involves using standardized tests to compare model performance consistently across different models, making it easier to gauge relative strengths. Benchmarks are well-defined and widely accepted, simplifying application but may not capture specific use-case nuances.\n\nIn contrast, custom evals are tailored to particular tasks or datasets, allowing more relevant and detailed assessment for specific needs. However, they require more planning and effort to design, implement, and validate, which can be challenging and time-consuming.\n\nThus, benchmarks offer ease and comparability, while custom evals provide specificity but demand careful planning and resources.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g014",
+    "query": "Summarize advanced LLM app dev: LangChain, RAG, agents, Langraph, CRIO frameworks covered.",
+    "ideal_answer": "CampusX has focused on advanced LLM app development by teaching LangChain for basic LLM applications and orchestration, RAG-based applications for retrieval-augmented generation, and working with agents using multiple libraries. They covered Langraph on YouTube and provided in-depth training on frameworks like CRIO through paid courses.",
+    "source": "TODO-verify"
+  },
+  {
+    "id": "g015",
+    "query": "Explain the multi-step rationale behind using offline evaluation to validate UPSC grader accuracy versus human scoring.",
+    "ideal_answer": "Offline evaluation is used to validate the UPSC grader's accuracy by comparing its scores on the same papers that humans have evaluated. The multi-step rationale involves: first, applying the grader to previously scored UPSC papers; second, measuring how closely the grader's marks align with human-assigned marks; and third, assessing the grader's correctness based on this alignment. This process ensures the grader reliably replicates human evaluation before deployment.",
+    "source": "TODO-verify"
+  }
+]
