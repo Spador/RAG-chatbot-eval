@@ -58,10 +58,10 @@ evaluate(
     test_cases=test_cases,
     metrics=metrics,
     hyperparameters={
-        "retriever": "reranker",          # vs "reranked" when you swap it in
-        "embedding_model": "text-embedding-3-small",
-        "chunk_size": 750,
-        "chunk_overlap": 100,
+        "retriever": "reranker",          
+        "embedding_model": "text-embedding-3-large",
+        "chunk_size": 1000,
+        "chunk_overlap": 150,
         "top_k": 5,
         "judge_model": JUDGE_MODEL_NAME,
         "golden_set": GOLDEN_PATH,
