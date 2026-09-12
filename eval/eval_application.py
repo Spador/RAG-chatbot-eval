@@ -113,4 +113,4 @@ style = GEval(
 
 
 # 4. EVALUATE — all three together
-evaluate(test_cases=test_cases, metrics=[style])
+evaluate(test_cases=test_cases, metrics=[correctness, completeness, style])
